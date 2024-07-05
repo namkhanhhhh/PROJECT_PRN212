@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Ky 5\\PRN212\\BarManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|f:\\ky 5\\prn212\\barmanager\\windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|F:\\Ky 5\\PRN212\\BarManager\\windowsformsbarmanager\\dal\\dao\\invoicedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\dal\\dao\\invoicedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|F:\\Ky 5\\PRN212\\BarManager\\windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoiceDAO.cs",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
+              "RelativeToolTip": "WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwDIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:56:41.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tableManager.cs",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\tableManager.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs",
+              "RelativeToolTip": "WindowsFormsBarManager\\tableManager.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwD0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:48:24.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tableManager.cs [Design]",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\tableManager.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs [Design]",
+              "RelativeToolTip": "WindowsFormsBarManager\\tableManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:47:58.609Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

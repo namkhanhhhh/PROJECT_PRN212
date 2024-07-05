@@ -1,0 +1,13 @@
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\bin\Debug\WindowsFormsBarManager.exe.config
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\bin\Debug\WindowsFormsBarManager.exe
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\bin\Debug\WindowsFormsBarManager.pdb
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.csproj.AssemblyReference.cache
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.bLogin.resources
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.Properties.Resources.resources
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.csproj.GenerateResource.cache
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.csproj.CoreCompileInputs.cache
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.exe
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.pdb
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.tableManager.resources
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.admin.resources
+F:\Ky 5\PRN212\BarManager\WindowsFormsBarManager\obj\Debug\WindowsFormsBarManager.userInformation.resources
