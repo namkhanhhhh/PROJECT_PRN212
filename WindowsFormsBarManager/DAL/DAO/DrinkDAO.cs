@@ -31,5 +31,18 @@ namespace WindowsFormsBarManager.DAL.DAO
             }
             return dList;
         }
+
+        public List<Drinks> getAllDrinks()
+        {
+            List<Drinks> dList = new List<Drinks>();
+            string query = "select * from Drinks";
+            DataTable data = DbContext.Instance.ExcuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                Drinks drinks = new Drinks(item);
+                dList.Add(drinks);
+            }
+            return dList;
+        }
     }
 }

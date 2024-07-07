@@ -62,6 +62,7 @@
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.Location = new System.Drawing.Point(233, 32);
             this.txtUserName.Name = "txtUserName";
+            this.txtUserName.ReadOnly = true;
             this.txtUserName.Size = new System.Drawing.Size(352, 28);
             this.txtUserName.TabIndex = 1;
             // 
@@ -98,7 +99,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(18, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 31);
+            this.label1.Size = new System.Drawing.Size(117, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Password:";
             // 
@@ -125,7 +126,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(18, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 31);
+            this.label2.Size = new System.Drawing.Size(174, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "New Password: ";
             // 
@@ -153,7 +154,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(18, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(259, 31);
+            this.label3.Size = new System.Drawing.Size(207, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Confirm Password:";
             // 
@@ -165,6 +166,7 @@
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCancel
             // 

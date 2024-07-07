@@ -14,11 +14,27 @@ namespace WindowsFormsBarManager
 {
     public partial class tableManager : Form
     {
-        public tableManager()
+
+        private Account loginAccount;
+
+        public Account LoginAccount { 
+        get { return loginAccount; }
+            set { loginAccount = value; 
+                changeAccount(loginAccount.Role); }
+        }
+
+        public tableManager(Account acc)
         {
             InitializeComponent();
+            this.LoginAccount = acc;
             LoadTable();
             LoadCategories();
+            LoadCbTable(cbxSwitchTable);
+        }
+
+        void changeAccount(int type)
+        {
+            adminToolStripMenuItem.Enabled = type ==1;
         }
 
         void LoadCategories()
@@ -97,8 +113,8 @@ namespace WindowsFormsBarManager
 
         private void userInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            userInformation userinformation = new userInformation();
-            userinformation.ShowDialog();
+            userInformation userInfo = new userInformation(LoginAccount);
+            userInfo.ShowDialog();
         }
 
         private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -138,15 +154,43 @@ namespace WindowsFormsBarManager
         {
             Table table=ViewOrder.Tag as Table;
             int invoiceId= InvoiceDAO.Instance.GetUncheckInvoiceIdByTableId(table.Id);
+            int discount=(int)numberDiscount.Value;
+            double totalPrice=Convert.ToDouble(txtTotalPrice.Text);
+            double price = totalPrice - (totalPrice / 100) * discount;
             if (invoiceId!=-1)
             {
-                if(MessageBox.Show("Are you sure to checkout with " + table.Name, "Notification", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                if(MessageBox.Show(string.Format("Are you sure to checkout with {0}\n TotalPrice with discount = {1} : {2}", table.Name, discount, price)
+                    , "Notification", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                 {
-                    InvoiceDAO.Instance.Checkout(invoiceId);
+                    InvoiceDAO.Instance.Checkout(invoiceId, discount,(float)price);
                     ShowInvoice(table.Id);
                     LoadTable();
                 }
             }
+        }
+        private void btnChangeTable_Click(object sender, EventArgs e)
+        {
+            int idTable1 = (ViewOrder.Tag as Table).Id;
+            int idTable2 = (cbxSwitchTable.SelectedItem as Table).Id;
+            String t1Name = (ViewOrder.Tag as Table).Name;
+            String t2Name= (cbxSwitchTable.SelectedItem as Table).Name;
+            if (MessageBox.Show(string.Format("Are you want to change table from {0} to {1}", t1Name, t2Name)
+                ,"Notification", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                TableDAO.Instance.ChangeTable(idTable1, idTable2);
+                LoadTable();
+            }
+        }
+
+        void LoadCbTable(ComboBox cb)
+        {
+            cb.DataSource=TableDAO.Instance.LoadAllTable();
+            cb.DisplayMember = "Name";
+        }
+
+        private void accountInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            userInformation u=new userInformation(loginAccount);
         }
     }
 }

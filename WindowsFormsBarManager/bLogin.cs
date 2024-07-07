@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsBarManager.DAL.DAO;
+using WindowsFormsBarManager.DAL.DTO;
 
 namespace WindowsFormsBarManager
 {
@@ -25,7 +26,8 @@ namespace WindowsFormsBarManager
             string password=txtPassword.Text;
             if (isLogin(userName,password))
             {
-            tableManager f=new tableManager();
+            Account lAccount = AccountDAO.Instance.getAccountByUN(userName);
+            tableManager f=new tableManager(lAccount);
             this.Hide();
             f.ShowDialog();
             this.Show();

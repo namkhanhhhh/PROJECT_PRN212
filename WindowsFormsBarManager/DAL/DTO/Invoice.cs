@@ -13,13 +13,15 @@ namespace WindowsFormsBarManager.DAL.DTO
         private DateTime? dateCheckIn;
         private DateTime? dateCheckOut;
         private int status;
+        private int discount;
 
-        public Invoice(int id, DateTime? dateCheckIn, DateTime? dateCheckOut, int status)
+        public Invoice(int id, DateTime? dateCheckIn, DateTime? dateCheckOut, int status, int discount = 0)
         {
             this.Id = id;
             this.DateCheckIn = dateCheckIn;
             this.DateCheckOut = dateCheckOut;
             this.Status = status;
+            this.Discount=discount;
         }
 
         public Invoice(DataRow dataRow)
@@ -32,11 +34,15 @@ namespace WindowsFormsBarManager.DAL.DTO
             this.DateCheckOut = (DateTime?)dTemp;
             }
             this.Status = (int)dataRow["status"];
+            if (dataRow["discount"].ToString()!="")
+            this.Discount = (int)dataRow["discount"];
+
         }
 
         public int Id { get => id; set => id = value; }
         public DateTime? DateCheckIn { get => dateCheckIn; set => dateCheckIn = value; }
         public DateTime? DateCheckOut { get => dateCheckOut; set => dateCheckOut = value; }
         public int Status { get => status; set => status = value; }
+        public int Discount { get => discount; set => discount = value; }
     }
 }

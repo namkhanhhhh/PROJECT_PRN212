@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using WindowsFormsBarManager.DAL.DTO;
 
 namespace WindowsFormsBarManager.DAL.DAO
@@ -46,10 +47,15 @@ namespace WindowsFormsBarManager.DAL.DAO
            
         }
 
-        public void Checkout(int id)
+        public void Checkout(int id, int discount, float total)
         {
-            string query= "update Invoices set status = 1 where invoiceId = "+id;
+            string query= "update Invoices set timeCheckout = GETDATE(), status = 1, discount = "+discount+", total = "+total+" where invoiceId = "+id;
             DbContext.Instance.ExecuteNonQuery(query);
+        }
+
+        public DataTable getInvoiceByDate(DateTime checkIn, DateTime checkOut)
+        {
+            return DbContext.Instance.ExcuteQuery("exec getInvoiceByDate @checkIn , @checkOut", new object[] {checkIn,checkOut});
         }
     }
 }

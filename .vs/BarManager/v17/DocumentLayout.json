@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Ky 5\\PRN212\\BarManager\\",
+  "WorkspaceRootPath": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|f:\\ky 5\\prn212\\barmanager\\windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|f:\\ky 5\\prn212\\barmanager\\project_prn212\\windowsformsbarmanager\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|f:\\ky 5\\prn212\\barmanager\\project_prn212\\windowsformsbarmanager\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|f:\\ky 5\\prn212\\barmanager\\project_prn212\\windowsformsbarmanager\\dal\\dao\\drinkdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\dal\\dao\\drinkdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|F:\\Ky 5\\PRN212\\BarManager\\windowsformsbarmanager\\dal\\dao\\invoicedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\dal\\dao\\invoicedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|F:\\Ky 5\\PRN212\\BarManager\\windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A43C30C7-E690-4B40-B72E-53F7FD86FA7D}|WindowsFormsBarManager\\WindowsFormsBarManager.csproj|solutionrelative:windowsformsbarmanager\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,39 +54,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InvoiceDAO.cs",
-              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
-              "RelativeDocumentMoniker": "WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
-              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
-              "RelativeToolTip": "WindowsFormsBarManager\\DAL\\DAO\\InvoiceDAO.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwDIAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T04:56:41.112Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "tableManager.cs",
-              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs",
-              "RelativeDocumentMoniker": "WindowsFormsBarManager\\tableManager.cs",
-              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs",
-              "RelativeToolTip": "WindowsFormsBarManager\\tableManager.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwD0AAAAlAAAA",
+              "Title": "admin.cs",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\admin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\admin.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\admin.cs*",
+              "RelativeToolTip": "WindowsFormsBarManager\\admin.cs*",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:48:24.905Z",
+              "WhenOpened": "2024-07-07T06:13:48.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "admin.cs [Design]",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\admin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\admin.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\admin.cs [Design]*",
+              "RelativeToolTip": "WindowsFormsBarManager\\admin.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T06:13:30.958Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DrinkDAO.cs",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\DAL\\DAO\\DrinkDAO.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\DAL\\DAO\\DrinkDAO.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\DAL\\DAO\\DrinkDAO.cs*",
+              "RelativeToolTip": "WindowsFormsBarManager\\DAL\\DAO\\DrinkDAO.cs*",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T06:12:06.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "tableManager.cs [Design]",
-              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\tableManager.cs",
               "RelativeDocumentMoniker": "WindowsFormsBarManager\\tableManager.cs",
-              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\WindowsFormsBarManager\\tableManager.cs [Design]",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\tableManager.cs [Design]",
               "RelativeToolTip": "WindowsFormsBarManager\\tableManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T06:47:58.609Z"
+              "WhenOpened": "2024-07-06T17:47:09.312Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tableManager.cs",
+              "DocumentMoniker": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\tableManager.cs",
+              "RelativeDocumentMoniker": "WindowsFormsBarManager\\tableManager.cs",
+              "ToolTip": "F:\\Ky 5\\PRN212\\BarManager\\PROJECT_PRN212\\WindowsFormsBarManager\\tableManager.cs",
+              "RelativeToolTip": "WindowsFormsBarManager\\tableManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T12:32:33.084Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -87,18 +87,19 @@
             this.accountInformationToolStripMenuItem.Name = "accountInformationToolStripMenuItem";
             this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.accountInformationToolStripMenuItem.Text = "Account Information";
+            this.accountInformationToolStripMenuItem.Click += new System.EventHandler(this.accountInformationToolStripMenuItem_Click);
             // 
             // userInformationToolStripMenuItem
             // 
             this.userInformationToolStripMenuItem.Name = "userInformationToolStripMenuItem";
-            this.userInformationToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.userInformationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.userInformationToolStripMenuItem.Text = "User Information";
             this.userInformationToolStripMenuItem.Click += new System.EventHandler(this.userInformationToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -186,6 +187,7 @@
             this.btnChangeTable.TabIndex = 6;
             this.btnChangeTable.Text = "Change Table";
             this.btnChangeTable.UseVisualStyleBackColor = true;
+            this.btnChangeTable.Click += new System.EventHandler(this.btnChangeTable_Click);
             // 
             // numberDiscount
             // 

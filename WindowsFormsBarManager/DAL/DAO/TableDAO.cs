@@ -17,6 +17,11 @@ namespace WindowsFormsBarManager.DAL.DAO
             private set => instance = value;
         }
 
+        public void ChangeTable(int tableFirst, int tableSecond)
+        {
+            DbContext.Instance.ExcuteQuery("changeTable @idTableFirst , @idTableSecond", new object[] {tableFirst,tableSecond});
+        }
+
         public static int TableWidth = 80;
         public static int TableHeight = 80;
         private TableDAO() { }

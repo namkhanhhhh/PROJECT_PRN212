@@ -66,6 +66,7 @@
     <Compile Include="DAL\DAO\InvoiceDetailDAO.cs" />
     <Compile Include="DAL\DAO\MenuDAO.cs" />
     <Compile Include="DAL\DAO\TableDAO.cs" />
+    <Compile Include="DAL\DTO\Account.cs" />
     <Compile Include="DAL\DTO\Category.cs" />
     <Compile Include="DAL\DTO\Drinks.cs" />
     <Compile Include="DAL\DTO\Invoice.cs" />
