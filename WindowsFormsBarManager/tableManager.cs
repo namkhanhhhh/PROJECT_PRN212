@@ -108,7 +108,42 @@ namespace WindowsFormsBarManager
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             admin a=new admin();
+            a.lAccount = LoginAccount;
+            a.AddDrinks += aAdd;
+            a.UpdateDrinks += aUpdate;
+            a.DeleteDrinks += aDelete;
+            a.AddCate += aAdd;
+            a.UpdateCate += aUpdate;
+            a.DeleteCate += aDelete;
             a.ShowDialog();
+        }
+
+        private void aDelete(object sender, EventArgs e)
+        {
+            LoadDrinksByCategories((cbxCategory.SelectedItem as Category).Id);
+            if (ViewOrder.Tag != null)
+            ShowInvoice((ViewOrder.Tag as Table).Id);
+            LoadTable();
+            LoadCategories();
+            LoadTable();
+        }
+
+        private void aUpdate(object sender, EventArgs e)
+        {
+            LoadDrinksByCategories((cbxCategory.SelectedItem as Category).Id);
+            if (ViewOrder.Tag != null)
+            ShowInvoice((ViewOrder.Tag as Table).Id);
+            LoadCategories();
+            LoadTable();
+        }
+
+        private void aAdd(object sender, EventArgs e)
+        {
+            LoadDrinksByCategories((cbxCategory.SelectedItem as Category).Id);
+            if(ViewOrder.Tag != null)
+            ShowInvoice((ViewOrder.Tag as Table).Id);
+            LoadCategories();
+            LoadTable();
         }
 
         private void userInformationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,6 +168,11 @@ namespace WindowsFormsBarManager
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Table table=ViewOrder.Tag as Table;
+            if (table==null)
+            {
+                MessageBox.Show("Please choose table");
+                return;
+            }
             int invoice=InvoiceDAO.Instance.GetUncheckInvoiceIdByTableId(table.Id);
             int drinkId=(cbxDrinks.SelectedItem as Drinks).Id;
             int count= (int)numberDrinkQuantity.Value;
@@ -191,6 +231,11 @@ namespace WindowsFormsBarManager
         private void accountInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             userInformation u=new userInformation(loginAccount);
+        }
+
+        private void numberDrinkQuantity_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

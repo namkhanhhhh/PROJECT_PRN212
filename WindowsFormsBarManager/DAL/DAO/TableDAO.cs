@@ -22,8 +22,8 @@ namespace WindowsFormsBarManager.DAL.DAO
             DbContext.Instance.ExcuteQuery("changeTable @idTableFirst , @idTableSecond", new object[] {tableFirst,tableSecond});
         }
 
-        public static int TableWidth = 80;
-        public static int TableHeight = 80;
+        public static int TableWidth = 70;
+        public static int TableHeight = 70;
         private TableDAO() { }
         public List<Table> LoadAllTable()
         {
@@ -35,6 +35,17 @@ namespace WindowsFormsBarManager.DAL.DAO
                 tList.Add(table);
             }
             return tList;
+        }
+        public bool addTable(string name)
+        {
+            int res = DbContext.Instance.ExecuteNonQuery(string.Format("insert into barTables(tableName) values ('{0}')", name));
+            return res > 0;
+        }
+
+        public bool updateTable(int id, string name)
+        {
+            int res = DbContext.Instance.ExecuteNonQuery(string.Format("update barTables set tableName = '{0}' where tableId = {1}", name, id));
+            return res > 0;
         }
     }
 }

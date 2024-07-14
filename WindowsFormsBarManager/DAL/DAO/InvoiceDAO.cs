@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,7 @@ namespace WindowsFormsBarManager.DAL.DAO
 
         public void Checkout(int id, int discount, float total)
         {
-            string query= "update Invoices set timeCheckout = GETDATE(), status = 1, discount = "+discount+", total = "+total+" where invoiceId = "+id;
+            string query= "update Invoices set timeCheckout = GETDATE(), status = 1 , discount = "+discount+" , total = "+ total.ToString(CultureInfo.InvariantCulture) + " where invoiceId = "+id;
             DbContext.Instance.ExecuteNonQuery(query);
         }
 

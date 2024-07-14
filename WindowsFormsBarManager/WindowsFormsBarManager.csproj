@@ -69,6 +69,7 @@
     <Compile Include="DAL\DTO\Account.cs" />
     <Compile Include="DAL\DTO\Category.cs" />
     <Compile Include="DAL\DTO\Drinks.cs" />
+    <Compile Include="DAL\DTO\DrinkWithCat.cs" />
     <Compile Include="DAL\DTO\Invoice.cs" />
     <Compile Include="DAL\DTO\InvoiceDetail.cs" />
     <Compile Include="DAL\DTO\Menuu.cs" />

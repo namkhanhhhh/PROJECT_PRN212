@@ -35,5 +35,10 @@ namespace WindowsFormsBarManager.DAL.DAO
         {
         DbContext.Instance.ExecuteNonQuery("InsertInvoiceDetailss @invoice , @drinkId , @count ", new object[] { invoice , drinkId , count });
         }
+
+        public void DeleteIDetailByDrinkId(int id)
+        {
+            DbContext.Instance.ExcuteQuery("delete InvoiceDetails where drinkId = "+id);
+        }
     }
 }
