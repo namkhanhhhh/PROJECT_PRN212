@@ -60,16 +60,17 @@
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(233, 32);
+            this.txtUserName.Location = new System.Drawing.Point(277, 32);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.ReadOnly = true;
-            this.txtUserName.Size = new System.Drawing.Size(352, 28);
+            this.txtUserName.Size = new System.Drawing.Size(308, 28);
             this.txtUserName.TabIndex = 1;
             // 
             // UserName
             // 
             this.UserName.AutoSize = true;
             this.UserName.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.UserName.Location = new System.Drawing.Point(18, 32);
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(132, 25);
@@ -80,6 +81,7 @@
             // 
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(12, 109);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 77);
@@ -88,10 +90,11 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(233, 23);
+            this.txtPassword.Location = new System.Drawing.Point(277, 23);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(352, 28);
+            this.txtPassword.Size = new System.Drawing.Size(308, 28);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -107,6 +110,7 @@
             // 
             this.panel3.Controls.Add(this.txtNewPassword);
             this.panel3.Controls.Add(this.label2);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Location = new System.Drawing.Point(12, 175);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(600, 59);
@@ -115,10 +119,11 @@
             // txtNewPassword
             // 
             this.txtNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(233, 14);
+            this.txtNewPassword.Location = new System.Drawing.Point(277, 14);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(352, 28);
+            this.txtNewPassword.Size = new System.Drawing.Size(308, 28);
             this.txtNewPassword.TabIndex = 1;
+            this.txtNewPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -143,15 +148,17 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(233, 3);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(277, 3);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(352, 28);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(308, 28);
             this.txtConfirmPassword.TabIndex = 1;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(18, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(207, 25);
@@ -184,6 +191,7 @@
             this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(633, 371);
             this.Controls.Add(this.btnCancel);

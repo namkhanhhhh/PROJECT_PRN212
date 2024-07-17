@@ -59,20 +59,21 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.accountInformationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(937, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(236, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -82,7 +83,7 @@
             this.userInformationToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.accountInformationToolStripMenuItem.Name = "accountInformationToolStripMenuItem";
-            this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.accountInformationToolStripMenuItem.Text = "Account Information";
             this.accountInformationToolStripMenuItem.Click += new System.EventHandler(this.accountInformationToolStripMenuItem_Click);
             // 
@@ -146,6 +147,7 @@
             // 
             // txtTotalPrice
             // 
+            this.txtTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotalPrice.Location = new System.Drawing.Point(820, 354);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.ReadOnly = true;
@@ -156,6 +158,7 @@
             // 
             // cbxSwitchTable
             // 
+            this.cbxSwitchTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxSwitchTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSwitchTable.FormattingEnabled = true;
             this.cbxSwitchTable.Location = new System.Drawing.Point(820, 264);
@@ -165,6 +168,7 @@
             // 
             // btnChangeTable
             // 
+            this.btnChangeTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChangeTable.Location = new System.Drawing.Point(819, 183);
             this.btnChangeTable.Name = "btnChangeTable";
             this.btnChangeTable.Size = new System.Drawing.Size(103, 60);
@@ -175,6 +179,7 @@
             // 
             // numberDiscount
             // 
+            this.numberDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numberDiscount.Location = new System.Drawing.Point(820, 314);
             this.numberDiscount.Name = "numberDiscount";
             this.numberDiscount.Size = new System.Drawing.Size(103, 22);
@@ -182,6 +187,7 @@
             // 
             // btnCheckout
             // 
+            this.btnCheckout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCheckout.Location = new System.Drawing.Point(820, 392);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(103, 68);
@@ -192,6 +198,7 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.numberDrinkQuantity);
             this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.cbxDrinks);
@@ -217,7 +224,6 @@
             0,
             0,
             0});
-            this.numberDrinkQuantity.ValueChanged += new System.EventHandler(this.numberDrinkQuantity_ValueChanged);
             // 
             // btnAdd
             // 
@@ -250,6 +256,9 @@
             // 
             // flpTable
             // 
+            this.flpTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flpTable.Location = new System.Drawing.Point(12, 41);
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(426, 465);
@@ -259,6 +268,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(937, 520);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.txtTotalPrice);

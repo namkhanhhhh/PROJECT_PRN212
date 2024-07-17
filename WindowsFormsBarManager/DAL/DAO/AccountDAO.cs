@@ -22,13 +22,6 @@ namespace WindowsFormsBarManager.DAL.DAO
 
         public bool isLogin(string userName, string password)
         {
-/*            byte[] data = ASCIIEncoding.ASCII.GetBytes(password);
-            byte[] hashData=new MD5CryptoServiceProvider().ComputeHash(data);
-            string hashPass = "";
-            foreach(byte item in hashData)
-            {
-                hashPass+= item;
-            }*/
             string query = "  select * from Accounts where userName='"+userName+"' and password='"+password+"'";
             DataTable result=DbContext.Instance.ExcuteQuery(query);
             return result.Rows.Count>0;

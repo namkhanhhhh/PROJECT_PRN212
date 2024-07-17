@@ -32,7 +32,7 @@
             this.panel23 = new System.Windows.Forms.Panel();
             this.btnReset = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.nbRole = new System.Windows.Forms.NumericUpDown();
+            this.txtRole = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.btnUpdateAccount = new System.Windows.Forms.Button();
@@ -105,7 +105,6 @@
             this.tpAccount.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nbRole)).BeginInit();
             this.panel21.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -143,6 +142,7 @@
             // 
             // tpAccount
             // 
+            this.tpAccount.BackColor = System.Drawing.Color.Indigo;
             this.tpAccount.Controls.Add(this.panel23);
             this.tpAccount.Controls.Add(this.panel22);
             this.tpAccount.Location = new System.Drawing.Point(4, 25);
@@ -151,10 +151,10 @@
             this.tpAccount.Size = new System.Drawing.Size(899, 523);
             this.tpAccount.TabIndex = 4;
             this.tpAccount.Text = "Account";
-            this.tpAccount.UseVisualStyleBackColor = true;
             // 
             // panel23
             // 
+            this.panel23.BackColor = System.Drawing.Color.Indigo;
             this.panel23.Controls.Add(this.btnReset);
             this.panel23.Controls.Add(this.panel24);
             this.panel23.Controls.Add(this.panel21);
@@ -176,29 +176,25 @@
             // 
             // panel24
             // 
-            this.panel24.Controls.Add(this.nbRole);
+            this.panel24.Controls.Add(this.txtRole);
             this.panel24.Controls.Add(this.label9);
             this.panel24.Location = new System.Drawing.Point(3, 90);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(398, 81);
             this.panel24.TabIndex = 3;
             // 
-            // nbRole
+            // txtRole
             // 
-            this.nbRole.Location = new System.Drawing.Point(133, 34);
-            this.nbRole.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nbRole.Name = "nbRole";
-            this.nbRole.Size = new System.Drawing.Size(257, 22);
-            this.nbRole.TabIndex = 1;
+            this.txtRole.Location = new System.Drawing.Point(133, 33);
+            this.txtRole.Name = "txtRole";
+            this.txtRole.Size = new System.Drawing.Size(257, 22);
+            this.txtRole.TabIndex = 9;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(3, 29);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 25);
@@ -266,6 +262,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Location = new System.Drawing.Point(3, 29);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 25);
@@ -283,6 +280,7 @@
             // dtgvAccounts
             // 
             this.dtgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvAccounts.BackgroundColor = System.Drawing.Color.Indigo;
             this.dtgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvAccounts.Location = new System.Drawing.Point(-3, 0);
             this.dtgvAccounts.Name = "dtgvAccounts";
@@ -293,6 +291,7 @@
             // 
             // tpCategoryDrinks
             // 
+            this.tpCategoryDrinks.BackColor = System.Drawing.Color.Indigo;
             this.tpCategoryDrinks.Controls.Add(this.dtgvCategories);
             this.tpCategoryDrinks.Controls.Add(this.panel13);
             this.tpCategoryDrinks.Location = new System.Drawing.Point(4, 25);
@@ -301,11 +300,11 @@
             this.tpCategoryDrinks.Size = new System.Drawing.Size(899, 523);
             this.tpCategoryDrinks.TabIndex = 2;
             this.tpCategoryDrinks.Text = "Category";
-            this.tpCategoryDrinks.UseVisualStyleBackColor = true;
             // 
             // dtgvCategories
             // 
             this.dtgvCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvCategories.BackgroundColor = System.Drawing.Color.Indigo;
             this.dtgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvCategories.Location = new System.Drawing.Point(6, 6);
             this.dtgvCategories.Name = "dtgvCategories";
@@ -316,6 +315,7 @@
             // 
             // panel13
             // 
+            this.panel13.BackColor = System.Drawing.Color.Indigo;
             this.panel13.Controls.Add(this.panel1);
             this.panel13.Controls.Add(this.panel16);
             this.panel13.Controls.Add(this.panel17);
@@ -385,6 +385,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(3, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 25);
@@ -413,6 +414,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(3, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 25);
@@ -421,6 +423,7 @@
             // 
             // tpDrinks
             // 
+            this.tpDrinks.BackColor = System.Drawing.Color.Indigo;
             this.tpDrinks.Controls.Add(this.panel8);
             this.tpDrinks.Controls.Add(this.panel7);
             this.tpDrinks.Controls.Add(this.panel6);
@@ -431,10 +434,10 @@
             this.tpDrinks.Size = new System.Drawing.Size(899, 523);
             this.tpDrinks.TabIndex = 1;
             this.tpDrinks.Text = "Drinks";
-            this.tpDrinks.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.Indigo;
             this.panel8.Controls.Add(this.txtSearchDrinks);
             this.panel8.Controls.Add(this.btnSearchDrink);
             this.panel8.Location = new System.Drawing.Point(488, 6);
@@ -512,6 +515,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Indigo;
             this.panel6.Controls.Add(this.panel12);
             this.panel6.Controls.Add(this.panel11);
             this.panel6.Controls.Add(this.panel10);
@@ -541,6 +545,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(3, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 25);
@@ -568,6 +573,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(4, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 25);
@@ -595,6 +601,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(3, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 25);
@@ -624,6 +631,7 @@
             // 
             this.idDrink.AutoSize = true;
             this.idDrink.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idDrink.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.idDrink.Location = new System.Drawing.Point(3, 29);
             this.idDrink.Name = "idDrink";
             this.idDrink.Size = new System.Drawing.Size(52, 25);
@@ -640,7 +648,9 @@
             // 
             // dtgvDrinks
             // 
+            this.dtgvDrinks.BackgroundColor = System.Drawing.Color.Indigo;
             this.dtgvDrinks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDrinks.GridColor = System.Drawing.Color.Indigo;
             this.dtgvDrinks.Location = new System.Drawing.Point(3, 3);
             this.dtgvDrinks.Name = "dtgvDrinks";
             this.dtgvDrinks.RowHeadersWidth = 51;
@@ -650,6 +660,7 @@
             // 
             // tpBill
             // 
+            this.tpBill.BackColor = System.Drawing.Color.Indigo;
             this.tpBill.Controls.Add(this.panel4);
             this.tpBill.Controls.Add(this.panel3);
             this.tpBill.Location = new System.Drawing.Point(4, 25);
@@ -658,7 +669,6 @@
             this.tpBill.Size = new System.Drawing.Size(899, 523);
             this.tpBill.TabIndex = 0;
             this.tpBill.Text = "Bill";
-            this.tpBill.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -705,7 +715,9 @@
             // dtgvBill
             // 
             this.dtgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvBill.BackgroundColor = System.Drawing.Color.Indigo;
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvBill.GridColor = System.Drawing.Color.Indigo;
             this.dtgvBill.Location = new System.Drawing.Point(6, 16);
             this.dtgvBill.Name = "dtgvBill";
             this.dtgvBill.RowHeadersWidth = 51;
@@ -728,6 +740,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.Indigo;
             this.tabPage1.Controls.Add(this.panel19);
             this.tabPage1.Controls.Add(this.panel14);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -736,10 +749,10 @@
             this.tabPage1.Size = new System.Drawing.Size(899, 523);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Table";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel19
             // 
+            this.panel19.BackColor = System.Drawing.Color.Indigo;
             this.panel19.Controls.Add(this.dtgvTables);
             this.panel19.Location = new System.Drawing.Point(6, 6);
             this.panel19.Name = "panel19";
@@ -749,6 +762,7 @@
             // dtgvTables
             // 
             this.dtgvTables.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvTables.BackgroundColor = System.Drawing.Color.Indigo;
             this.dtgvTables.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvTables.Location = new System.Drawing.Point(0, 0);
             this.dtgvTables.Name = "dtgvTables";
@@ -759,6 +773,7 @@
             // 
             // panel14
             // 
+            this.panel14.BackColor = System.Drawing.Color.Indigo;
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.panel2);
             this.panel14.Controls.Add(this.panel18);
@@ -788,6 +803,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(3, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 25);
@@ -855,6 +871,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(3, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 25);
@@ -865,6 +882,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(931, 566);
             this.Controls.Add(this.tpTable);
             this.Name = "admin";
@@ -874,7 +892,6 @@
             this.panel23.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nbRole)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
@@ -997,6 +1014,6 @@
         private System.Windows.Forms.Button btnDeleteAccount;
         private System.Windows.Forms.Button btnAddAccount;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.NumericUpDown nbRole;
+        private System.Windows.Forms.TextBox txtRole;
     }
 }

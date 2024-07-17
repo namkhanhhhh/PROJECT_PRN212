@@ -232,10 +232,5 @@ namespace WindowsFormsBarManager
         {
             userInformation u=new userInformation(loginAccount);
         }
-
-        private void numberDrinkQuantity_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

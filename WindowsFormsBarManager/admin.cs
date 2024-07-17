@@ -46,6 +46,7 @@ namespace WindowsFormsBarManager
             addAccountBinding();
             addCategoryBinding();
             addTableBinding();
+
         }
 
         void loadListInvoiceByDate(DateTime checkIn, DateTime checkOut)
@@ -75,25 +76,11 @@ namespace WindowsFormsBarManager
             loadDrinks();
         }
 
-
-        /*        void loadDrinks()
-                {
-                    DataTable data = DrinkDAO.Instance.getAllDrinksWithCategoryName();
-                    List<DrinkWithCategory> dList = new List<DrinkWithCategory>();
-
-                    foreach (DataRow item in data.Rows)
-                    {
-                        DrinkWithCategory drink = new DrinkWithCategory(item);
-                        dList.Add(drink);
-                    }
-
-                    dtgvDrinks.DataSource = dList;
-                }*/
-
         void loadDrinks()
         {
             dList.DataSource = DrinkDAO.Instance.getAllDrinks();
             dtgvDrinks.Columns["Id"].Visible = false;
+            dtgvDrinks.Columns["CategoryId"].Visible = false;
         }
 
         void loadAllCate(ComboBox comboBox)
@@ -104,7 +91,19 @@ namespace WindowsFormsBarManager
 
         void loadAccount()
         {
+            txtAccountName.DataBindings.Clear();
+            txtRole.DataBindings.Clear();
+
             aList.DataSource = AccountDAO.Instance.getAllAccount();
+            txtRole.DataBindings.Add(new Binding("Text", dtgvAccounts.DataSource, "Role", true, DataSourceUpdateMode.Never));
+            if (txtRole.Text.Equals("1"))
+            {
+                txtRole.Text = "Admin";
+            }
+            else
+            {
+                txtRole.Text = "Staff";
+            }
         }
 
         void loadCate()
@@ -122,9 +121,27 @@ namespace WindowsFormsBarManager
 
         void addAccountBinding()
         {
+            // Remove existing bindings before adding new ones to avoid duplicates
+            txtAccountName.DataBindings.Clear();
+            txtRole.DataBindings.Clear();
+
             txtAccountName.DataBindings.Add(new Binding("Text", dtgvAccounts.DataSource, "UserName", true, DataSourceUpdateMode.Never));
-            nbRole.DataBindings.Add(new Binding("Value", dtgvAccounts.DataSource, "Role", true, DataSourceUpdateMode.Never));
+            txtRole.DataBindings.Add(new Binding("Text", dtgvAccounts.DataSource, "Role", true, DataSourceUpdateMode.Never));
+
+            // Update role text based on the value
+            dtgvAccounts.SelectionChanged += (s, e) =>
+            {
+                if (txtRole.Text.Equals("1"))
+                {
+                    txtRole.Text = "Admin";
+                }
+                else
+                {
+                    txtRole.Text = "Staff";
+                }
+            };
         }
+
 
         void addDrinkBinding()
         {
@@ -144,18 +161,6 @@ namespace WindowsFormsBarManager
             txtTableId.DataBindings.Add(new Binding("Text", dtgvTables.DataSource, "Id", true, DataSourceUpdateMode.Never));
             txtTableName.DataBindings.Add(new Binding("Text", dtgvTables.DataSource, "Name", true, DataSourceUpdateMode.Never));
         }
-
-        /*        void addDrinkBinding()
-                {
-                    txtDrinkName.DataBindings.Add(new Binding("Text", dtgvDrinks.DataSource, "Name", true, DataSourceUpdateMode.Never));
-                    txtDrinkId.DataBindings.Add(new Binding("Text", dtgvDrinks.DataSource, "Id", true, DataSourceUpdateMode.Never));
-                    numberPrice.DataBindings.Add(new Binding("Value", dtgvDrinks.DataSource, "Price", true, DataSourceUpdateMode.Never));
-
-                    cbCategoryList.DataSource = CategoryDAO.Instance.getAllCategories();
-                    cbCategoryList.DisplayMember = "Name";
-                    cbCategoryList.ValueMember = "Id";
-                    cbCategoryList.DataBindings.Add(new Binding("Text", dtgvDrinks.DataSource, "CategoryName", true, DataSourceUpdateMode.Never));
-                }*/
 
         private void txtDrinkId_TextChanged(object sender, EventArgs e)
         {
@@ -180,27 +185,6 @@ namespace WindowsFormsBarManager
                 }
                 cbCategoryList.SelectedIndex = index;
             }
-            /*if (dtgvDrinks.SelectedCells.Count > 0)
-            {
-                string categoryName = dtgvDrinks.SelectedCells[0].OwningRow.Cells["CategoryName"].Value.ToString();
-
-                Category category = CategoryDAO.Instance.getCateByName(categoryName);
-
-                cbCategoryList.SelectedItem = category;
-
-                int index = -1;
-                int i = 0;
-                foreach (Category item in cbCategoryList.Items)
-                {
-                    if (item.Name == category.Name)
-                    {
-                        index = i;
-                        break;
-                    }
-                    i++;
-                }
-                cbCategoryList.SelectedIndex = index;
-            }*/
         }
 
         private void btnSearchDrink_Click(object sender, EventArgs e)
@@ -454,7 +438,7 @@ namespace WindowsFormsBarManager
         private void btnAddAccount_Click(object sender, EventArgs e)
         {
             string userName=txtAccountName.Text;
-            int role=(int) nbRole.Value;
+            int role=txtRole.Text.ToLower().Equals("admin")?1:0;
             AddAccount(userName, role);
         }
 
@@ -498,7 +482,7 @@ namespace WindowsFormsBarManager
         private void btnUpdateAccount_Click(object sender, EventArgs e)
         {
             string userName = txtAccountName.Text;
-            int role = (int)nbRole.Value;
+            int role = txtRole.Text.ToLower().Equals("admin") ? 1 : 0;
             UpdateAccount(userName, role);
         }
 
